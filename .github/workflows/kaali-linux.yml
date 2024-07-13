@@ -27,7 +27,7 @@ jobs:
        - name: cloning repository
          continue-on-error: true
          run: |
-           git clone https://${{ secrets.GIT_NAME }}:${{ secrets.GIT_TOKEN }}@${{ secrets.BOT_REPO }} kaali
+           git clone https://${{ secrets.GIT_NAME }}:${{ secrets.GIT_TOKEN }}@github.com/KingOfState/Z-Mirror kaali
        - name: running kaali-linux server
          timeout-minutes: 350
          continue-on-error: true
